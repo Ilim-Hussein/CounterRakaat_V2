@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CounterRakaat_V2.MyFlyoutPageFlyout"
+             Title="Flyout">
+
+
+    <Grid BackgroundColor="White" >
+        <StackLayout>
+            <ListView x:Name="MenuItemsListView"
+              SeparatorVisibility="None"
+              HasUnevenRows="true"
+              ItemsSource="{Binding MenuItems}">
+                <ListView.Header>
+                    <Grid BackgroundColor="#d5d9db" HorizontalOptions="FillAndExpand">
+                            <Label
+                              TranslationX="-120"
+                              TranslationY="-20"
+                              Grid.Column="1"
+                              Grid.Row="4"
+                              FontSize="30"
+                              Text="Меню"
+                              Style="{DynamicResource SubtitleStyle}"/>
+                    </Grid>
+                </ListView.Header>
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout Padding="15,10" HorizontalOptions="FillAndExpand" VerticalOptions="Start">
+                                <Frame HorizontalOptions="End" Scale="1.1">
+                                    <Grid Padding="2">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="30"/>
+                                            <ColumnDefinition Width="*"/>
+                                        </Grid.ColumnDefinitions>
+                                        <Image Source="{Binding IconSourse}" Scale="1.8"/>
+                                        <Label Grid.Column="1" Text="{Binding Title}" FontSize="17" FontAttributes="Bold" />
+                                    </Grid>
+                                </Frame>
+                                <Polyline />
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+            <Image Source="meshit_1.png" ScaleY="1.1" ScaleX="1.1"/>
+        </StackLayout>
+    </Grid>
+</ContentPage>

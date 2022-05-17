@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CounterRakaat_V2.MyFlyoutPageDetail_1">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout VerticalOptions="Start">
+                <Grid RowDefinitions="*,2,Auto">
+                    <BoxView x:Name="bdGradient" Scale="4" AnchorX="1" AnchorY="0" >
+                        <BoxView.Background>
+                            <LinearGradientBrush>
+                                <GradientStop Color="White"  />
+                                <GradientStop Color="White"  />
+                            </LinearGradientBrush>
+                        </BoxView.Background>
+                    </BoxView>
+                    <Grid VerticalOptions="Center" HeightRequest="400"/>
+                    <Path Data="M0,0H375V262.033s-0.025,4.813-55.426-10.71-70.141-80.047-130.3-82.22-85.544,67.7-130.893,83.22S0,262.033,0,262.033Z" Aspect="Fill"  Fill="#d5d9db" TranslationY="-190"/>
+                    <Image Source="arabtext_1.png" Scale="0.42" VerticalOptions="Start" />
+                </Grid>
+
+                <StackLayout Padding="25,0,25,0"  TranslationY="80" VerticalOptions="Center" HorizontalOptions="Center">
+                    <Label Text="О нас" VerticalOptions="StartAndExpand" HorizontalOptions="Center" FontSize="25"  TranslationY="-200" Padding="4" FontAttributes="Bold" />
+                    <Label Text="Программу Rakaat counter разработала компания Ifox studio которая уже с 2020г занимается разработкой програмного обеспечение,игр,3Д моделей." VerticalOptions="Center"  HorizontalOptions="Center" FontSize="15"  TranslationY="-200" />
+                    <Label Text="Автором и разработчиком программы выступил Гусейнов.И.А" VerticalOptions="StartAndExpand" HorizontalOptions="Center" FontSize="15"  TranslationY="-200" Padding="2"/>
+                    <Label Text="Главное что бы программа в лишний раз уберегла вас от сомнений!" VerticalOptions="End" HorizontalOptions="Center" FontSize="15"  TranslationY="-200" Padding="10" FontAttributes="Italic"/>
+
+                </StackLayout>
+
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
