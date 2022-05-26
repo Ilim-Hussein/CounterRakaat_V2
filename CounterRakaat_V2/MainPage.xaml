@@ -47,12 +47,12 @@
                      VerticalOptions="Center"
                      HorizontalOptions="Center"/>
             </Grid>
-            
-            <Label Text="Если готовы к намазу нажмите Start" 
+
+            <Label x:Name="IfReady_main" Text="Если готовы к намазу нажмите Start" 
                        TextColor="White"
                        FontSize="18"
                        HorizontalOptions="Center"/>
-            <Label Text="Таблица" 
+            <Label x:Name="Table_main" Text="Таблица" 
                        TextColor="White"
                        FontSize="45"
                        FontAttributes="Bold" 
@@ -64,7 +64,7 @@
                           BackgroundColor="Transparent"
                           VerticalOptions="Center"
                           CornerRadius="30" Margin="5">
-                     <Label  x:Name="Time_1"
+                    <Label  x:Name="Rakaat_main"
                                Text="Ракааты"
                                TextColor="White"
                                HorizontalTextAlignment="Center"

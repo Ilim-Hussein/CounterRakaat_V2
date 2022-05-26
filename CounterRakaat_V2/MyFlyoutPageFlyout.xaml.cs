@@ -23,22 +23,27 @@ namespace CounterRakaat_V2
 
             BindingContext = new MyFlyoutPageFlyoutViewModel();
             ListView = MenuItemsListView;
+            Menu_table_of_contents.Text = Recource.Resource.Menu_table_of_contents;
         }
 
         private class MyFlyoutPageFlyoutViewModel : INotifyPropertyChanged
         {
+            string Main_menu = Recource.Resource.Main_menu;
+            string Use_menu = Recource.Resource.Use_menu;
+            string About_menu = Recource.Resource.About_menu;
+            string Contacts_menu = Recource.Resource.Contacts_menu;
             public ObservableCollection<MyFlyoutPageFlyoutMenuItem> MenuItems { get; set; }
 
             public MyFlyoutPageFlyoutViewModel()
             {
                 MenuItems = new ObservableCollection<MyFlyoutPageFlyoutMenuItem>(new[]
                 {
-                    new MyFlyoutPageFlyoutMenuItem { Id = 0, Title = "Главное"          ,IconSourse = "home.png",   TargetType = typeof(MainPage)},
-                    new MyFlyoutPageFlyoutMenuItem { Id = 1, Title = "Как пользоваться" ,IconSourse = "help.png",   TargetType = typeof(MyFlyoutPageDetail)},
-                    new MyFlyoutPageFlyoutMenuItem { Id = 2, Title = "О нас"            ,IconSourse = "aboutus.png",TargetType = typeof(MyFlyoutPageDetail_1)},
-                    new MyFlyoutPageFlyoutMenuItem { Id = 3, Title = "Контакты"         ,IconSourse = "contact.png",TargetType = typeof(MyFlyoutPageDetail_2) },
+                    new MyFlyoutPageFlyoutMenuItem { Id = 0, Title = Main_menu    /*"Главное" */         ,IconSourse = "home.png",   TargetType = typeof(MainPage)},
+                    new MyFlyoutPageFlyoutMenuItem { Id = 1, Title = Use_menu    /*"Как пользоваться" */,IconSourse = "help.png",   TargetType = typeof(MyFlyoutPageDetail)},
+                    new MyFlyoutPageFlyoutMenuItem { Id = 2, Title = About_menu  /*"О нас" */           ,IconSourse = "aboutus.png",TargetType = typeof(MyFlyoutPageDetail_1)},
+                    new MyFlyoutPageFlyoutMenuItem { Id = 3, Title = Contacts_menu /*"Контакты"*/       ,IconSourse = "contact.png",TargetType = typeof(MyFlyoutPageDetail_2) },
 
-                }); ;
+                }); ; ;
             }
 
             #region INotifyPropertyChanged Implementation

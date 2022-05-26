@@ -17,6 +17,8 @@ namespace CounterRakaat_V2
             InitializeComponent();
             MainPage control = new MainPage();
             control.Accelerometer_Stop();
+            About_table_of_contents.Text = Recource.Resource.About_table_of_contents;
+            About_text.Text = Recource.Resource.About_text;
 
         }
     }

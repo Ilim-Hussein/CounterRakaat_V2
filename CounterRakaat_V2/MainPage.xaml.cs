@@ -40,6 +40,9 @@ namespace CounterRakaat_V2
             Task.Run(AnimateBackground);
             Accelerometer_Stop();
             Accelerometer.ReadingChanged += Accelerometer_ReadingChanged;
+            IfReady_main.Text = Recource.Resource.IfReady_main;
+            Table_main.Text = Recource.Resource.Table_main;
+            Rakaat_main.Text = Recource.Resource.Rakaat_main;
 
         }
 

@@ -14,9 +14,13 @@ namespace CounterRakaat_V2
     {
         public MyFlyoutPageDetail()
         {
-            InitializeComponent();
+          InitializeComponent();
           MainPage control= new MainPage();
           control.Accelerometer_Stop();
+            Use_table_of_contents.Text = Recource.Resource.Use_table_of_contents;
+            Use_text.Text = Recource.Resource.Use_text;
+            Why_table_of_contents.Text= Recource.Resource.Why_table_of_contents;
+            Why_text.Text= Recource.Resource.Why_text;
         }
     }
 }

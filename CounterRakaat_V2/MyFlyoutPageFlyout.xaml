@@ -14,6 +14,7 @@
                 <ListView.Header>
                     <Grid BackgroundColor="#d5d9db" HorizontalOptions="FillAndExpand">
                             <Label
+                              x:Name="Menu_table_of_contents"
                               TranslationX="-120"
                               TranslationY="-20"
                               Grid.Column="1"
@@ -43,7 +44,6 @@
                     </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>
-            <Image Source="meshit_1.png" ScaleY="1.1" ScaleX="1.1"/>
         </StackLayout>
     </Grid>
 </ContentPage>

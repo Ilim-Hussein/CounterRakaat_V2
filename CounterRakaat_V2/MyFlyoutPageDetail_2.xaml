@@ -19,15 +19,12 @@
                     <Image Source="arabtext_2.png" Scale="0.42" VerticalOptions="Start" />
                 </Grid>
                 <StackLayout Padding="25,0,25,0"  TranslationY="80" VerticalOptions="Center" HorizontalOptions="Center">
-                    <Label Text="Контакты" VerticalOptions="StartAndExpand" HorizontalOptions="Center" FontSize="25"  TranslationY="-200" Padding="4" FontAttributes="Bold" />
+                    <Label x:Name="Contacts_table_of_contents" Text="Контакты" VerticalOptions="StartAndExpand" HorizontalOptions="Center" FontSize="25"  TranslationY="-200" Padding="4" FontAttributes="Bold" />
                     <StackLayout Orientation="Horizontal">
-                        <Label Text="Наш сайт -" VerticalOptions="StartAndExpand" HorizontalOptions="Center" FontSize="15"  TranslationY="-200"  />
-                        <Label Text="https://theifox.com/ " VerticalOptions="StartAndExpand" HorizontalOptions="Center" FontSize="15"  TranslationY="-200" FontAttributes="Bold" />
+                        <Label x:Name="Contacts_text_website" Text="https://theifox.com/ " VerticalOptions="StartAndExpand" HorizontalOptions="Center" FontSize="15"  TranslationY="-200" FontAttributes="Bold" />
                     </StackLayout>
                     <StackLayout Orientation="Horizontal">
-                        <Label Text="Наша почта  -" VerticalOptions="StartAndExpand" HorizontalOptions="Center" FontSize="15"  TranslationY="-200" Padding="2"/>
-                        <Label Text="ilim11.net@gmail.com " VerticalOptions="StartAndExpand" HorizontalOptions="Center" FontSize="15"  TranslationY="-200" Padding="2" FontAttributes="Bold" />
-
+                        <Label  x:Name="Contacts_text_mail" Text="ilim11.net@gmail.com " VerticalOptions="StartAndExpand" HorizontalOptions="Center" FontSize="15"  TranslationY="-200" Padding="2" FontAttributes="Bold" />
                     </StackLayout>
                     </StackLayout>
             </StackLayout>

@@ -20,11 +20,8 @@
                 </Grid>
 
                 <StackLayout Padding="25,0,25,0"  TranslationY="80" VerticalOptions="Center" HorizontalOptions="Center">
-                    <Label Text="О нас" VerticalOptions="StartAndExpand" HorizontalOptions="Center" FontSize="25"  TranslationY="-200" Padding="4" FontAttributes="Bold" />
-                    <Label Text="Программу Rakaat counter разработала компания Ifox studio которая уже с 2020г занимается разработкой програмного обеспечение,игр,3Д моделей." VerticalOptions="Center"  HorizontalOptions="Center" FontSize="15"  TranslationY="-200" />
-                    <Label Text="Автором и разработчиком программы выступил Гусейнов.И.А" VerticalOptions="StartAndExpand" HorizontalOptions="Center" FontSize="15"  TranslationY="-200" Padding="2"/>
-                    <Label Text="Главное что бы программа в лишний раз уберегла вас от сомнений!" VerticalOptions="End" HorizontalOptions="Center" FontSize="15"  TranslationY="-200" Padding="10" FontAttributes="Italic"/>
-
+                    <Label x:Name="About_table_of_contents" Text="О нас" VerticalOptions="StartAndExpand" HorizontalOptions="Center" FontSize="25"  TranslationY="-200" Padding="4" FontAttributes="Bold" />
+                    <Label x:Name="About_text" Text="Программу Rakaat counter разработала компания Ifox studio которая уже с 2020г занимается разработкой програмного обеспечение,игр,3Д моделей." VerticalOptions="Center"  HorizontalOptions="Center" FontSize="15"  TranslationY="-200" />
                 </StackLayout>
 
             </StackLayout>
