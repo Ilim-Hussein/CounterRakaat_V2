@@ -38,10 +38,10 @@ namespace CounterRakaat_V2
             {
                 MenuItems = new ObservableCollection<MyFlyoutPageFlyoutMenuItem>(new[]
                 {
-                    new MyFlyoutPageFlyoutMenuItem { Id = 0, Title = Main_menu    /*"Главное" */         ,IconSourse = "home.png",   TargetType = typeof(MainPage)},
-                    new MyFlyoutPageFlyoutMenuItem { Id = 1, Title = Use_menu    /*"Как пользоваться" */,IconSourse = "help.png",   TargetType = typeof(MyFlyoutPageDetail)},
-                    new MyFlyoutPageFlyoutMenuItem { Id = 2, Title = About_menu  /*"О нас" */           ,IconSourse = "aboutus.png",TargetType = typeof(MyFlyoutPageDetail_1)},
-                    new MyFlyoutPageFlyoutMenuItem { Id = 3, Title = Contacts_menu /*"Контакты"*/       ,IconSourse = "contact.png",TargetType = typeof(MyFlyoutPageDetail_2) },
+                    new MyFlyoutPageFlyoutMenuItem { Id = 0, Title = Main_menu     ,IconSourse = "home.png",   TargetType = typeof(MainPage)},
+                    new MyFlyoutPageFlyoutMenuItem { Id = 1, Title = Use_menu      ,IconSourse = "help.png",   TargetType = typeof(MyFlyoutPageDetail)},
+                    new MyFlyoutPageFlyoutMenuItem { Id = 2, Title = About_menu    ,IconSourse = "aboutus.png",TargetType = typeof(MyFlyoutPageDetail_1)},
+                    new MyFlyoutPageFlyoutMenuItem { Id = 3, Title = Contacts_menu ,IconSourse = "contact.png",TargetType = typeof(MyFlyoutPageDetail_2) },
 
                 }); ; ;
             }
