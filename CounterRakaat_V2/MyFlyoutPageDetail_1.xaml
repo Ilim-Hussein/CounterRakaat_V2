@@ -4,7 +4,7 @@
              x:Class="CounterRakaat_V2.MyFlyoutPageDetail_1">
     <ContentPage.Content>
         <ScrollView>
-            <StackLayout VerticalOptions="Start">
+            <StackLayout VerticalOptions="Start" HorizontalOptions="Center">
                 <Grid RowDefinitions="*,2,Auto">
                     <BoxView x:Name="bdGradient" Scale="4" AnchorX="1" AnchorY="0" >
                         <BoxView.Background>
@@ -19,9 +19,9 @@
                     <Image Source="arabtext_1.png" Scale="0.42" VerticalOptions="Start" />
                 </Grid>
 
-                <StackLayout Padding="25,0,25,0"  TranslationY="80" VerticalOptions="Center" HorizontalOptions="Center">
+                <StackLayout Padding="25,0,25,0"  TranslationY="80"  HorizontalOptions="Center">
                     <Label x:Name="About_table_of_contents" Text="О нас" VerticalOptions="StartAndExpand" HorizontalOptions="Center" FontSize="25"  TranslationY="-200" Padding="4" FontAttributes="Bold" />
-                    <Label x:Name="About_text" Text="Программу Rakaat counter разработала компания Ifox studio которая уже с 2020г занимается разработкой програмного обеспечение,игр,3Д моделей." VerticalOptions="Center"  HorizontalOptions="Center" FontSize="15"  TranslationY="-200" />
+                    <Label x:Name="About_text" Text="Программу Rakaat counter разработала компания Ifox studio которая уже с 2020г занимается разработкой програмного обеспечение,игр,3Д моделей."  FontSize="15"  TranslationY="-200" TranslationX="25" />
                 </StackLayout>
 
             </StackLayout>

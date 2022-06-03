@@ -28,8 +28,7 @@
         </Grid>
         
         <StackLayout VerticalOptions="End" AnchorY ="1" TranslationY="15">
-            <Image Source="meshit.png"  ></Image>
-
+            <Image Source="meshit.png" TranslationY="10"></Image>
             <controls:MTAdView x:Name="myAds" IsVisible="true" AdsId="ca-app-pub-3940256099942544/6300978111" VerticalOptions="EndAndExpand" >
                 <controls:MTAdView.HeightRequest>
                     <x:OnIdiom>
@@ -39,7 +38,6 @@
                     </x:OnIdiom>
                 </controls:MTAdView.HeightRequest>
             </controls:MTAdView>
-
         </StackLayout>
 
 
