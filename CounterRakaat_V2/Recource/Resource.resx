@@ -128,6 +128,12 @@
     <value>The Rakaat counter program was developed by IFox studio, which has been developing software, games, and 3D graphics since 2020.</value>
     <comment>*</comment>
   </data>
+  <data name="Alert_Attention" xml:space="preserve">
+    <value>Attention!</value>
+  </data>
+  <data name="Alert_Put" xml:space="preserve">
+    <value>Please put your phone in your pants pockets</value>
+  </data>
   <data name="Contacts_menu" xml:space="preserve">
     <value>Contacts</value>
   </data>

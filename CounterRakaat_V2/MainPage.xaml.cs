@@ -43,7 +43,6 @@ namespace CounterRakaat_V2
             IfReady_main.Text = Recource.Resource.IfReady_main;
             Table_main.Text = Recource.Resource.Table_main;
             Rakaat_main.Text = Recource.Resource.Rakaat_main;
-
         }
 
 
@@ -51,9 +50,9 @@ namespace CounterRakaat_V2
         {
             var data = e.Reading;
             result = counter / 2;
-            dataX.Text = Convert.ToString($"X - {data.Acceleration.X}");
-            dataY.Text = Convert.ToString($"Y - { data.Acceleration.Y}");
-            dataZ.Text = Convert.ToString($"Z - {result}");
+          //  dataX.Text = Convert.ToString($"X - {data.Acceleration.X}");
+          //  dataY.Text = Convert.ToString($"Y - {data.Acceleration.Y}");
+          //  dataZ.Text = Convert.ToString($"Z - {result}");
 
             Aceler_dataX = data.Acceleration.X;
             Aceler_dataY = data.Acceleration.Y;
@@ -208,23 +207,7 @@ namespace CounterRakaat_V2
             if (result <= 8 && result >= 5)   { itog = 2;  while (Vib_Controll == false) { Vibtate_Controll(itog); Vib_Controll = true;  } }
             if (result <= 12 && result >= 9)  { itog = 3;  while (Vib_Controll == true)  { Vibtate_Controll(itog); Vib_Controll = false; } }  
             if (result <= 16 && result >= 13) { itog = 4;  while (Vib_Controll == false) { Vibtate_Controll(itog); Vib_Controll = true;  } }
-            if (result <= 20 && result >= 17) { itog = 5;  while (Vib_Controll == true)  { Vibtate_Controll(itog); Vib_Controll = false; } }
-            if (result <= 24 && result >= 21) { itog = 6;  while (Vib_Controll == false) { Vibtate_Controll(itog); Vib_Controll = true;  } }
-            if (result <= 28 && result >= 25) { itog = 7;  while (Vib_Controll == true)  { Vibtate_Controll(itog); Vib_Controll = false; } }
-            if (result <= 32 && result >= 29) { itog = 8;  while (Vib_Controll == false) { Vibtate_Controll(itog); Vib_Controll = true;  } }
-            if (result <= 36 && result >= 33) { itog = 9;  while (Vib_Controll == true)  { Vibtate_Controll(itog); Vib_Controll = false; } }
-            if (result <= 40 && result >= 37) { itog = 10; while (Vib_Controll == false) { Vibtate_Controll(itog); Vib_Controll = true;  } }
-            if (result <= 44 && result >= 41) { itog = 11; while (Vib_Controll == true)  { Vibtate_Controll(itog); Vib_Controll = false; } }
-            if (result <= 48 && result >= 45) { itog = 12; while (Vib_Controll == false) { Vibtate_Controll(itog); Vib_Controll = true;  } }
-            if (result <= 52 && result >= 49) { itog = 13; while (Vib_Controll == true)  { Vibtate_Controll(itog); Vib_Controll = false; } }
-            if (result <= 56 && result >= 53) { itog = 14; while (Vib_Controll == false) { Vibtate_Controll(itog); Vib_Controll = true;  } }
-            if (result <= 60 && result >= 57) { itog = 15; while (Vib_Controll == true)  { Vibtate_Controll(itog); Vib_Controll = false; } }
-            if (result <= 64 && result >= 61) { itog = 16; while (Vib_Controll == false) { Vibtate_Controll(itog); Vib_Controll = true;  } }
-            if (result <= 68 && result >= 65) { itog = 17; while (Vib_Controll == true)  { Vibtate_Controll(itog); Vib_Controll = false; } }
-            if (result <= 72 && result >= 69) { itog = 18; while (Vib_Controll == false) { Vibtate_Controll(itog); Vib_Controll = true;  } }
-            if (result <= 76 && result >= 73) { itog = 19; while (Vib_Controll == true)  { Vibtate_Controll(itog); Vib_Controll = false; } }
-            if (result <= 80 && result >= 77) { itog = 20; while (Vib_Controll == false) { Vibtate_Controll(itog); Vib_Controll = true;  } }
-            if (result > 81 ) { counter = 0;}
+            if (result > 14 ) { counter = 0;}
             return itog;
         }
 
@@ -248,7 +231,7 @@ namespace CounterRakaat_V2
                 {
                    // DependencyService.Get<IServiceDroid>().StartService();
 
-                    await DisplayAlert("Внимание", "Положите телефон в карман", "Ок");
+                    await DisplayAlert(Recource.Resource.Alert_Attention, Recource.Resource.Alert_Put, "Ok");
                     ButtonStart_1.Text = "Stop";
                     await Task.Delay(2000);
                     Accelerometer.Start(SensorSpeed.UI);
@@ -258,10 +241,9 @@ namespace CounterRakaat_V2
                 {
                   //  DependencyService.Get<IServiceDroid>().StopService();
 
-
                     Accelerometer_Stop();
-                        ButtonStart_1.Text = "Start";
-                        counter = 0;
+                    ButtonStart_1.Text = "Start";
+                    counter = 0;
                 }
             }
 

@@ -88,6 +88,24 @@ namespace CounterRakaat_V2.Recource {
         }
         
         /// <summary>
+        ///   Ищет локализованную строку, похожую на Attention!.
+        /// </summary>
+        internal static string Alert_Attention {
+            get {
+                return ResourceManager.GetString("Alert_Attention", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Please put your phone in your pants pockets.
+        /// </summary>
+        internal static string Alert_Put {
+            get {
+                return ResourceManager.GetString("Alert_Put", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Ищет локализованную строку, похожую на Contacts.
         /// </summary>
         internal static string Contacts_menu {

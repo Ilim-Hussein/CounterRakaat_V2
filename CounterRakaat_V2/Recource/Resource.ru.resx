@@ -126,6 +126,12 @@
   <data name="About_text" xml:space="preserve">
     <value>Программу Rakaat Counter разработала компания Ifox studio которая уже с 2020г занимается разработкой програмногое обеспечения,игр,и 3D графики.</value>
   </data>
+  <data name="Alert_Attention" xml:space="preserve">
+    <value>Внимание!</value>
+  </data>
+  <data name="Alert_Put" xml:space="preserve">
+    <value>Пожалуйста,положите телефон в карманы брюк</value>
+  </data>
   <data name="Contacts_menu" xml:space="preserve">
     <value>Контакты</value>
   </data>
