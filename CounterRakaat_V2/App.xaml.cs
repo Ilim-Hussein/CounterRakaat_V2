@@ -2,6 +2,7 @@
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using Xamarin.Essentials;
+
 namespace CounterRakaat_V2
 {
     public partial class App : Application

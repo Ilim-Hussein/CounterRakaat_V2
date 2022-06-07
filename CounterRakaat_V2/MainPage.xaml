@@ -29,7 +29,7 @@
         
         <StackLayout VerticalOptions="End" AnchorY ="1" TranslationY="15">
             <Image Source="meshit.png" TranslationY="10"></Image>
-            <controls:MTAdView x:Name="myAds" IsVisible="true" AdsId="ca-app-pub-3940256099942544/6300978111" VerticalOptions="EndAndExpand" >
+            <controls:MTAdView x:Name="myAds" IsVisible="true" AdsId="ca-app-pub-8043336213983979/7491451322" VerticalOptions="EndAndExpand" >
                 <controls:MTAdView.HeightRequest>
                     <x:OnIdiom>
                         <x:OnIdiom.Phone>50</x:OnIdiom.Phone>
