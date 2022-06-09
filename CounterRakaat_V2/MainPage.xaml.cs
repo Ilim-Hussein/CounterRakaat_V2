@@ -229,6 +229,7 @@ namespace CounterRakaat_V2
 
                     await DisplayAlert(Recource.Resource.Alert_Attention, Recource.Resource.Alert_Put, "Ok");
                     ButtonStart_1.Text = "Stop";
+                    ButtonStart_1.BackgroundColor = Color.FromHex("#02a65f");
                     await Task.Delay(2000);
                     Accelerometer.Start(SensorSpeed.UI);
                 }
@@ -239,6 +240,7 @@ namespace CounterRakaat_V2
 
                     Accelerometer_Stop();
                     ButtonStart_1.Text = "Start";
+                    ButtonStart_1.BackgroundColor = Color.FromHex("#669FDF");
                     counter = 0;
                 }
             }
