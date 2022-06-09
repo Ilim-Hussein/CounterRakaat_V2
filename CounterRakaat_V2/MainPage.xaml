@@ -18,7 +18,7 @@
             </BoxView.Background>
         </BoxView>
         
-        <Grid VerticalOptions="Start" HeightRequest="400">
+            <Grid VerticalOptions="Start" HeightRequest="400">
             <Path Data="M0,0H375V262.033s-0.025,4.813-55.426-10.71-70.141-80.047-130.3-82.22-85.544,67.7-130.893,83.22S0,262.033,0,262.033Z" Aspect="Fill"  Fill="#58c6c7" TranslationY="-190"/>
             <!--StackLayout> TEST
                 <Label x:Name="dataX" Text=" " HorizontalOptions="Center"/>
