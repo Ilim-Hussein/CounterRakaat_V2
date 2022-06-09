@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Essentials;
@@ -11,14 +7,14 @@ namespace CounterRakaat_V2
 {
     public partial class MainPage : ContentPage
     {
-        public float num1 = 0.8f;
+        public float num1 = 0.81f;
         public float num2 = 0.9f;
-        public float num3 = 0.2f;
+        public float num3 = 0.21f;
         public float num4 = 0.1f;
 
-        public float num_1 = -0.8f;
+        public float num_1 = -0.81f;
         public float num_2 = -0.9f;
-        public float num_3 = -0.2f;
+        public float num_3 = -0.21f;
         public float num_4 = -0.1f;
 
         public float Aceler_dataX = 0.0f;
@@ -207,7 +203,7 @@ namespace CounterRakaat_V2
             if (result <= 8 && result >= 5)   { itog = 2;  while (Vib_Controll == false) { Vibtate_Controll(itog); Vib_Controll = true;  } }
             if (result <= 12 && result >= 9)  { itog = 3;  while (Vib_Controll == true)  { Vibtate_Controll(itog); Vib_Controll = false; } }  
             if (result <= 16 && result >= 13) { itog = 4;  while (Vib_Controll == false) { Vibtate_Controll(itog); Vib_Controll = true;  } }
-            if (result > 14 ) { counter = 0;}
+            if (result > 16 ) { counter = 0;}
             return itog;
         }
 

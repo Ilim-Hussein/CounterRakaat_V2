@@ -205,7 +205,7 @@ namespace CounterRakaat_V2.Recource {
         }
         
         /// <summary>
-        ///   Ищет локализованную строку, похожую на Using the Rakyat Counter program is very simple, for this you need to press the Start button and put your smartphone in your pants pockets.Next, the program itself will count the number of cancellations you have made, after which you will see the result in the table..
+        ///   Ищет локализованную строку, похожую на Using the Rakaat Counter program is very simple, for this you need to press the Start button and put your smartphone in your pants pockets. Next, the program itself will calculate the number of prayer rakaats you have made, after which you will see the result in the table. Also, if during the prayer you suddenly forget which rakaat you are on now, then you can simply click on the side button of the lock screen, and the program will vibrate the number of rakaats..
         /// </summary>
         internal static string Use_text {
             get {
