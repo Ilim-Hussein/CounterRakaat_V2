@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="102" android:versionName="1.0.0" package="com.counterrakaat" android:installLocation="auto">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="103" android:versionName="1.1.1" package="com.counterrakaat" android:installLocation="auto">
 	<uses-sdk android:minSdkVersion="21" android:targetSdkVersion="32" />
 	<application android:theme="@style/MainTheme" android:icon="@mipmap/icon_namaz" android:label="Rakaat counter">
 		<meta-data android:name="com.google.android.gms.ads.APPLICATION_ID" android:value="ca-app-pub-8043336213983979~5517768959" />
